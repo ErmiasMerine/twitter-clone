@@ -8,13 +8,13 @@ function TweetBox() {
 
     const sendTweet = (e) => {
         e.preventDefault();
-        db.collection('posts').add({
-            displayName: "Bleach",
-            username: "@die4bleach",
+        db.collection('tweets').add({
+            displayName: "Ermias Merine",
+            username: "ErmiasMerine",
             verified: true,
             text: tweetMessage,
             image: tweetImage,
-            avatar: "https://www.artmajeur.com/medias/standard/c/l/clementereira/artwork/14265665_img-20210305-121737.jpg?v=1646671799"
+            avatar: "https://media-exp2.licdn.com/dms/image/C5603AQE5QwjqqtnmHA/profile-displayphoto-shrink_400_400/0/1656168658084?e=1661990400&v=beta&t=5_wuj_XRFNTBWQxTi8DzQERsTiBJ5ss1MeR3da4iy0Q"
         })
         setTweetMessage("");
         setTweetImage("");
@@ -23,7 +23,7 @@ function TweetBox() {
         <div className="tweetBox">
             <form>
                 <div className="tweetBox__input">
-                <Avatar src= "https://www.artmajeur.com/medias/standard/c/l/clementereira/artwork/14265665_img-20210305-121737.jpg?v=1646671799"
+                <Avatar src= "https://media-exp2.licdn.com/dms/image/C5603AQE5QwjqqtnmHA/profile-displayphoto-shrink_400_400/0/1656168658084?e=1661990400&v=beta&t=5_wuj_XRFNTBWQxTi8DzQERsTiBJ5ss1MeR3da4iy0Q"
                 />
                 
                 <input
